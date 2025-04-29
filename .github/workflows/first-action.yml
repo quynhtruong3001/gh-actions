@@ -5,9 +5,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print greeting
-        run: echo "Hello, World!"
+        run: | 
+          echo "Hello, World!"
+          echo "This is my first GitHub Action workflow."
+          echo "Let's automate some tasks!"
       - name: Print current date
-        run: date
+        run: |
+          date
+          - name: Print current time
+            date +"%T"
+          - name: Print current user
+          run: whoami
+          pwd
       - name: Print current directory
         run: pwd
       - name: List files
