@@ -12,12 +12,10 @@ jobs:
       - name: Print current date
         run: |
           date
-          - name: Print current time
-            date +"%T"
-          - name: Print current user
-          run: whoami
           pwd
       - name: Print current directory
         run: pwd
       - name: List files
-        run: ls -la
+        run: | 
+          ls -la
+          ls
